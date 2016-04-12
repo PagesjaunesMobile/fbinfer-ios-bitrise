@@ -40,7 +40,3 @@ For an app that works with a target :
   * Support for target / scheme
   * Documentation
   * Share with the community
-
-* 0.2.0
-
-  * Support for Android
