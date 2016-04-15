@@ -64,8 +64,8 @@ cd "${infer_source_dir}"
 
 # Execute Infer
 if [[ -n "${infer_custom_config_path}" ]]; then
-	xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}" "${infer_custom_config_path}"
+	infer -- xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}" "${infer_custom_config_path}"
 else
-	xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}"
+	infer -- xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}"
 fi
 exit 0
