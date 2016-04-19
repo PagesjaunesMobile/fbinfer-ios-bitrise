@@ -17,7 +17,7 @@ For an app that works with a scheme :
         - infer_configuration: configurationName
         - infer_sdk: sdkName
         - infer_custom_config_path: If you want to append some custom param to Infer
-        - infer_debug_mode: Set it to true or false in order to use it
+        - infer_debug_mode: Set it to true if you want to see what command are send to the system
 ```
 
 For an app that works with a target :
@@ -30,7 +30,7 @@ For an app that works with a target :
         - infer_configuration: configurationName
         - infer_sdk: sdkName
         - infer_custom_config_path: If you want to append some custom param to Infer
-        - infer_debug_mode: Set it to true or false in order to use it
+        - infer_debug_mode: Set it to true if you want to see what command are send to the system
 ```
 
 # Milestone

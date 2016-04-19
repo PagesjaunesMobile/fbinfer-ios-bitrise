@@ -22,16 +22,24 @@ run_if: true
 inputs:
   - infer_target:
     opts:
-      title: Xcode target to check
+      title: Project target
+      summary: ""
+      description: |
+        If you don't have a workspace set the target name
       is_required: false
   - infer_custom_config_path:
     opts:
-      title: FbInfer custom configuration
-      summary: Use whatever flag you want to launch FbInfer in check mode
+      title: Custom configuration
+      summary: ""
+      description: |
+        If you want you can append command to Faux Pas with this variable
       is_required: false
   - infer_debug_mode: "false"
     opts:
-      title: FbInfer Debug
+      title: Debug Mode
+      summary: ""
+      description: |
+        If you want to see what command are send to the system.
       is_required: true
       value_options:
       - "true"
@@ -42,17 +50,23 @@ inputs:
       is_required: true
   - infer_scheme: $BITRISE_SCHEME
     opts:
-      title: If you use a workspace you need to define a shared scheme
+      title: Workspace scheme
+      summary: ""
+      description: |
+        If you use a workspace you need to define a shared scheme
       is_required: false
   - infer_configuration:
     opts:
-      title: FbInfer configuration
+      title: Project configuration
       is_required: true
   - infer_sdk:
     opts:
-      title: FbInfer SDK
+      title: SDK name
+      summary: ""
+      description: |
+        Use SDK as the name or path of the base SDK when building the project
       is_required: true
   - infer_workspace:
     opts:
       title: Xcode workspace to build project with
-      is_required: true
+      is_required: false

@@ -39,8 +39,10 @@ if [[ -n "${infer_custom_config_path}" ]]; then
 fi
 if [[ -n "${infer_debug_mode}" ]]; then
 	echo "infer_debug_mode: ${infer_debug_mode}"
+else
+	echo "infer_debug_mode: this is required"
+	exit 1
 fi
-
 echo "============================="
 echo ""
 
@@ -64,8 +66,8 @@ cd "${infer_source_dir}"
 
 # Execute Infer
 if [[ -n "${infer_custom_config_path}" ]]; then
-	xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}" "${infer_custom_config_path}"
+	infer -- xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}" "${infer_custom_config_path}"
 else
-	xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}"
+	infer -- xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}"
 fi
 exit 0
