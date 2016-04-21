@@ -70,4 +70,12 @@ if [[ -n "${infer_custom_config_path}" ]]; then
 else
 	infer -- xcodebuild $execute_mode -configuration "${infer_configuration}" -sdk "${infer_sdk}"
 fi
+
+export INFER_IOS_OUTPUT_FILE="$PWD/infer-out/report.json"
+echo ""
+echo "========== Outputs =========="
+echo "INFER_IOS_OUTPUT_FILE: ${INFER_IOS_OUTPUT_FILE}"
+echo "============================="
+echo ""
+
 exit 0
