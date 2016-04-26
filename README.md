@@ -9,7 +9,7 @@ Modify your `bitrise.yml` in order to test it.
 For an app that works with a scheme :
 
 ```yaml
-    - git::https://github.com/ataourirt/fbinfer-ios-bitrise@master:
+    - git::https://github.com/PagesjaunesMobile/fbinfer-ios-bitrise@master:
         inputs:
         - infer_scheme: $BITRISE_SCHEME
         - infer_workspace: pathToYour.xcworkspace
@@ -23,7 +23,7 @@ For an app that works with a scheme :
 For an app that works with a target :
 
 ```yaml
-    - git::https://github.com/ataourirt/fbinfer-ios-bitrise.git@master:
+    - git::https://github.com/PagesjaunesMobile/fbinfer-ios-bitrise.git@master:
         inputs:
         - infer_target: targetName
         - infer_source_dir: $BITRISE_SOURCE_DIR

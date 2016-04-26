@@ -3,9 +3,9 @@ summary: Step for Bitrise
 description: |-
   This is a Step for [FbInfer App](http://fbinfer.com).
   This is not an officially supported plugin
-website: https://github.com/ataourirt/fbinfer-ios-bitrise
-source_code_url: https://github.com/ataourirt/fbinfer-ios-bitrise
-support_url: https://github.com/ataourirt/fbinfer-ios-bitrise
+website: https://github.com/PagesjaunesMobile/fbinfer-ios-bitrise
+source_code_url: https://github.com/PagesjaunesMobile/fbinfer-ios-bitrise
+support_url: https://github.com/PagesjaunesMobile/fbinfer-ios-bitrise
 host_os_tags:
   - osx-10.10
 project_type_tags:
